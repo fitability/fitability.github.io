@@ -1,3 +1,5 @@
+@using Fitability.Home.Pages
+
 <Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
@@ -5,7 +7,7 @@
     </Found>
     <NotFound>
         <LayoutView Layout="@typeof(MainLayout)">
-            <Fitability.Home.Pages._404 />
+            <NotFound />
         </LayoutView>
     </NotFound>
 </Router>
